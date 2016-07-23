@@ -731,6 +731,11 @@ pre code {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.col-md-6 p#justify{
+  text-align: justify;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 760px;
@@ -5408,7 +5413,17 @@ button.close {
   position: relative;
   overflow: hidden;
   width: 100%;
+  height: 401px;
 }
+
+.carousel-inner img#car {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 401px;
+  background-color: #26bdbd;
+}
+
 .carousel-inner > .item {
   display: none;
   position: relative;

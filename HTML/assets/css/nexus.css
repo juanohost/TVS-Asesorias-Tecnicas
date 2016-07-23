@@ -78,7 +78,7 @@ body {
   width: 100%;
 }
 #header .container {
-  height: 130px;
+  height: 230px;
   position: relative;
 }
 /* Logo */
@@ -86,11 +86,17 @@ body {
   text-align: center;
 }
 .logo a {
-  top: 40px;
+  top: 20px;
+  bottom: 40px; 
   display: block;
   position: relative;
   z-index: 20;
 }
+
+.logo img{
+  height: 170px;
+}
+
 p.site-slogan {
   color: #b1a5bd;
   font-size: 11px;
@@ -175,8 +181,10 @@ p.site-slogan {
 }
 /* Copyright */
 #copyright p {
-  padding: 0;
+  padding: 40px 0;
+  text-align: right;
   margin: 0;
+  float: left!important;
 }
 /*-----------------------------------------------------------------------------------*/
 /* Miscellaneous */
@@ -203,8 +211,15 @@ p.site-slogan {
 /* Utility Classes */
 /*-----------------------------------------------------------------------------------*/
 .bottom-border {
-  box-shadow: 0 -4px 0 #33747a inset, 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -4px 0 #26bdbd inset, 0 0 20px rgba(0, 0, 0, 0.1);
 }
+
+.bottom-border-fixed{
+  position: relative;
+  top: 100px;
+  z-index: 20px;
+}
+
 .bottom-border-shadow {
   background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
   background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 30px, rgba(0, 0, 0, 0) 100%);
@@ -215,10 +230,10 @@ p.site-slogan {
   -ms-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   -o-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
-  position: relative;
-  top: 0px;
+  position: relative
+  top: 100px;
   z-index: 20;
-  -webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+  webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   -ms-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
   -o-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
@@ -253,11 +268,11 @@ p.site-slogan {
   color: #e6e6e6;
 }
 .color-primary {
-  color: #33747a !important;
+  color: #26bdbd !important;
 }
 .color-primary[class^="fa-"]:before,
 .color-primary[class*=" fa-"]:before {
-  color: #33747a;
+  color: #26bdbd;
 }
 .color-red {
   color: #8b2626 !important;
@@ -716,7 +731,7 @@ p.site-slogan {
 }
 #hornav .container {
   background-color: #313131;
-  box-shadow: 0 -4px 0 #33747a inset, 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -4px 0 #26bdbd inset, 0 0 20px rgba(0, 0, 0, 0.1);
   min-height: 60px;
   display: block;
 }
@@ -751,7 +766,7 @@ p.site-slogan {
 #hornav ul#hornavmenu > li > span.active,
 #hornav ul#hornavmenu > li > a.current,
 #hornav ul#hornavmenu > li > span.current {
-  background: #33747a;
+  background: #26bdbd;
 }
 #hornav .nav > li > a:hover,
 #hornav .nav > li > a:focus {
@@ -875,7 +890,7 @@ p.site-slogan {
   display: block;
   padding: 10px 20px;
   outline: none;
-  color: #33747a;
+  color: #26bdbd;
   font-size: 16px;
   font-weight: 300;
 }
@@ -897,7 +912,7 @@ p.site-slogan {
 }
 .sidebar-nav ul li:hover a,
 .sidebar-nav ul li.active a {
-  color: #33747a;
+  color: #26bdbd;
 }
 .sidebar-nav > li:last-child a {
   border: none;
@@ -1121,6 +1136,11 @@ h2 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 32px;
 }
+
+h2.title {
+  padding: 10px 0px 14px 21px;
+}
+
 h3 {
   font-size: 20px;
   font-weight: 300;
@@ -1149,7 +1169,7 @@ h6 {
 }
 a {
   text-decoration: none;
-  color: #33747a;
+  color: #26bdbd;
   -webkit-transition: color 0.15s ease-in;
   -moz-transition: color 0.15s ease-in;
   -o-transition: color 0.15s ease-in;
@@ -1686,11 +1706,11 @@ ul.grid li:first-child a {
   color: #b3b3b3;
 }
 .testimonials-bg-primary p {
-  background: #33747a;
+  background: #26bdbd;
   color: #ffffff;
 }
 .testimonials-bg-primary p:after {
-  border-top-color: #33747a;
+  border-top-color: #26bdbd;
 }
 .testimonials-bg-light p {
   background: #ffffff;
@@ -1828,7 +1848,7 @@ ul.grid li:first-child a {
   background: #FFF;
   border-left-color: #EEE;
   border-right-color: #EEE;
-  border-top: 3px solid #33747a;
+  border-top: 3px solid #26bdbd;
   color: #333333;
   outline: none;
 }
@@ -1915,7 +1935,7 @@ ul.grid li:first-child a {
   border-color: #7dc2c9;
 }
 .panel-primary .panel-footer {
-  background: #33747a;
+  background: #26bdbd;
   border-color: #7dc2c9;
   color: #FFFFFF;
 }
@@ -2759,7 +2779,7 @@ ul.posts-list li {
   display: block;
   max-width: 100%;
   position: relative;
-  border-top: 4px solid #33747a;
+  border-top: 4px solid #26bdbd;
 }
 .person-details figure figcaption {
   color: #ffffff;
